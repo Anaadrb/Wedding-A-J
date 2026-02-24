@@ -33,7 +33,7 @@
         <!-- Background Image (Sunset) -->
         <div class="absolute inset-0 z-0">
             <img src="dibujo.jpeg" 
-                 alt="[Mediterranean sunset image]" 
+                 alt="Mediterranean sunset background" 
                  class="w-full h-full object-cover opacity-20">
         </div>
 
@@ -70,21 +70,18 @@
     <!-- HORIZONTAL IMAGE SECTION -->
     <section class="py-16 px-6 bg-white">
         <div class="max-w-4xl mx-auto">
-            <div class="rounded-2xl overflow-hidden shadow-2xl bg-slate-50">
-                <img src="nuestra-foto.jpg" alt="[Ana and Javier Image]" class="w-full h-auto object-cover max-h-[600px]" onerror="this.style.display='none'">
+            <div class="rounded-2xl overflow-hidden shadow-2xl">
+                <img src="nuestra-foto.jpg" alt="Ana and Javier" class="w-full h-auto object-cover max-h-[600px]" onerror="this.style.display='none'">
             </div>
         </div>
     </section>
 
     <!-- SAVE THE DATE SECTION -->
-    <section class="py-24 px-6 bg-white">
+    <section class="py-24 px-6 bg-white border-b border-slate-50">
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-xs uppercase tracking-[0.4em] text-dorado mb-8 font-bold italic w-full block text-center">Save the Date</h2>
             <p class="text-2xl md:text-3xl font-light leading-relaxed mb-8 text-azul text-center">
                 We share this space with you so you can save this date in your calendar.
-            </p>
-            <p class="text-slate-500 leading-relaxed italic text-lg max-w-xl mx-auto text-center text-center">
-                Your company is the greatest gift we could receive. Organizing this gathering in advance allows us to take care of every detail with maximum excitement.
             </p>
         </div>
     </section>
@@ -93,26 +90,23 @@
     <section class="py-12 px-6 bg-white">
         <div class="max-w-sm mx-auto">
             <div class="rounded-2xl overflow-hidden shadow-xl bg-slate-50 aspect-[3/4]">
-                <img src="foto-vertical.jpg" alt="[Vertical Image 1]" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                <img src="foto-vertical.jpeg" alt="Couple portrait" class="w-full h-full object-cover" onerror="this.style.display='none'">
             </div>
         </div>
     </section>
 
-    <!-- THE WEDDING SECTION (CENTERED) -->
-    <section class="py-24 px-6 max-w-4xl mx-auto text-center border-t border-slate-50">
-        <div class="flex justify-center mb-6 text-[#D4AF37]">
-            <i data-lucide="heart" size="40"></i>
-        </div>
+    <!-- THE WEDDING SECTION -->
+    <section class="py-24 px-6 max-w-4xl mx-auto text-center">
         <h2 class="text-4xl font-light mb-8 text-azul text-center">The Wedding</h2>
         <div class="grid md:grid-cols-2 gap-12">
-            <!-- Card When -->
+            <!-- When Card -->
             <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 transition hover:shadow-md text-center">
                 <i data-lucide="calendar" class="mb-4 text-dorado mx-auto"></i>
                 <h3 class="text-xl font-semibold mb-2 text-center">When</h3>
                 <p class="text-slate-500 text-sm italic text-center">Saturday, September 12th, 2026</p>
                 <p class="text-slate-500 text-sm text-center">Welcome: 11:30 AM | Ceremony: 12:00 PM</p>
             </div>
-            <!-- Card Where -->
+            <!-- Where Card -->
             <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 transition hover:shadow-md text-center">
                 <i data-lucide="map-pin" class="mb-4 text-dorado mx-auto"></i>
                 <h3 class="text-xl font-semibold mb-2 text-center">Where</h3>
@@ -135,14 +129,13 @@
     <section class="py-24 px-6 max-w-2xl mx-auto text-center">
         <h2 class="text-4xl font-light mb-6 text-azul text-center">RSVP</h2>
         <div class="max-w-lg mx-auto mb-10 text-center">
-            <p class="text-slate-600 italic text-sm leading-relaxed mb-4 text-center">
-                Although there is still time before our meeting, if you already know you will be attending, we would love for you to let us know so we can start with the preparations.
+            <p class="text-slate-600 italic text-sm leading-relaxed mb-4 text-center text-center">
+                Although there is still some time, if you already know you will be attending, we would love for you to let us know so we can start with the preparations.
             </p>
-            <p class="text-slate-400 italic text-xs text-center">If you are not sure yet, don't worry; we will ask for your confirmation again as the date approaches.</p>
+            <p class="text-slate-400 italic text-xs text-center">If you are not sure yet, don't worry, we will ask you again later.</p>
         </div>
         <div class="bg-white p-10 md:p-16 rounded-3xl border border-slate-100 shadow-xl flex flex-col items-center justify-center space-y-6 mx-auto">
             <i data-lucide="check-circle" size="48" class="text-[#D4AF37]"></i>
-            <h4 class="font-bold text-lg uppercase tracking-widest text-center text-azul">Confirm Now</h4>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVFyZFdR2yHYH5_bOWMR9e9Cjk9v1T6-pb1CyD_-MopQH9aw/viewform?usp=publish-editor" target="_blank" class="bg-azul text-white px-12 py-4 rounded-full text-[10px] tracking-[0.3em] hover:bg-dorado transition transform hover:scale-105 shadow-lg uppercase font-semibold inline-block text-center">Fill out Form</a>
         </div>
     </section>
@@ -152,26 +145,29 @@
         <div class="max-w-5xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-light mb-12 text-center underline decoration-[#D4AF37]/20 underline-offset-8 text-azul w-full block">Information of Interest</h2>
             <div class="grid md:grid-cols-3 gap-12 text-center">
+                <!-- Airport -->
                 <div class="flex flex-col items-center">
                     <div class="w-14 h-14 rounded-full bg-crema flex items-center justify-center mb-6 text-dorado border border-dorado/10 mx-auto">
                         <i data-lucide="plane"></i>
                     </div>
                     <h4 class="font-bold mb-3 uppercase text-[10px] tracking-widest text-azul">Airport</h4>
-                    <p class="text-slate-500 text-sm text-center leading-relaxed">Málaga Airport (AGP). <br> 15 min from the city center.</p>
+                    <p class="text-slate-500 text-sm text-center leading-relaxed text-center">Málaga Airport (AGP). <br> 15 minutes from the city center.</p>
                 </div>
+                <!-- Train -->
                 <div class="flex flex-col items-center">
                     <div class="w-14 h-14 rounded-full bg-crema flex items-center justify-center mb-6 text-dorado border border-dorado/10 mx-auto">
                         <i data-lucide="train"></i>
                     </div>
-                    <h4 class="font-bold mb-3 uppercase text-[10px] tracking-widest text-azul">Train</h4>
-                    <p class="text-slate-500 text-sm text-center leading-relaxed">María Zambrano Station. <br> Direct high-speed connections.</p>
+                    <h4 class="font-bold mb-3 uppercase text-[10px] tracking-widest text-azul text-center">Train</h4>
+                    <p class="text-slate-500 text-sm text-center leading-relaxed text-center">María Zambrano Station. <br> Direct high-speed connections.</p>
                 </div>
+                <!-- Accommodation -->
                 <div class="flex flex-col items-center">
                     <div class="w-14 h-14 rounded-full bg-[#FFF5F5] flex items-center justify-center mb-6 text-[#C2410C] border border-[#FECACA]/50 mx-auto">
                         <i data-lucide="hotel"></i>
                     </div>
-                    <h4 class="font-bold mb-3 uppercase text-[10px] tracking-widest text-center text-azul text-center">Accommodation</h4>
-                    <p class="text-slate-500 text-sm italic text-center leading-relaxed text-center">High Season. <br> We recommend booking in advance to ensure availability.</p>
+                    <h4 class="font-bold mb-3 uppercase text-[10px] tracking-widest text-azul text-center">Accommodation</h4>
+                    <p class="text-slate-500 text-sm italic text-center leading-relaxed text-center">High Season. <br> We recommend booking in advance.</p>
                 </div>
             </div>
         </div>
@@ -181,7 +177,7 @@
     <section class="py-12 px-6 bg-white">
         <div class="max-w-sm mx-auto">
             <div class="rounded-2xl overflow-hidden shadow-xl bg-slate-50 aspect-[3/4]">
-                <img src="foto-vertical-final.jpg" alt="[Vertical Image 2]" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                <img src="foto-vertical-final.jpeg" alt="Couple portrait" class="w-full h-full object-cover" onerror="this.style.display='none'">
             </div>
         </div>
     </section>
@@ -190,8 +186,8 @@
     <footer class="py-24 bg-azul text-white text-center">
         <div class="max-w-xs mx-auto text-center">
             <p class="text-4xl font-light tracking-[0.3em] mb-6 text-center w-full block">Ana & Javier</p>
-            <div class="w-16 h-px bg-[#D4AF37]/30 mx-auto mb-6"></div>
-            <p class="text-[10px] tracking-[0.6em] uppercase opacity-40 italic text-center w-full block font-sans font-light">Málaga • 12.09.2026</p>
+            <div class="w-16 h-px bg-[#D4AF37]/30 mx-auto mb-6 text-center"></div>
+            <p class="text-[10px] tracking-[0.6em] uppercase opacity-40 italic text-center w-full block font-sans font-light">Málaga • 09.12.2026</p>
         </div>
     </footer>
 
