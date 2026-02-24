@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana & Javier — 12.09.2026</title>
+    <title>Ana & Javier — September 12th, 2026</title>
+    <!-- Tailwind CSS for layout -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Elegant Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Montserrat', sans-serif; }
@@ -25,28 +28,28 @@
 </head>
 <body class="bg-crema text-azul selection:bg-[#D4AF37] selection:text-white text-center">
 
-    <!-- CABECERA CON FONDO TRANSLÚCIDO -->
+    <!-- HERO HEADER WITH TRANSLUCENT BACKGROUND -->
     <header class="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden border-b border-dorado/10">
-        <!-- Imagen de fondo con opacidad suave -->
+        <!-- Background Image with soft opacity -->
         <div class="absolute inset-0 z-0">
             <img src="dibujo.jpeg" 
-                 alt="Atardecer mediterráneo" 
+                 alt="Mediterranean Sunset" 
                  class="w-full h-full object-cover opacity-20">
         </div>
 
         <div class="z-10 animate-fade text-center w-full">
             <h1 class="text-6xl md:text-8xl font-light mb-6 tracking-tight">Ana & Javier</h1>
             <div class="w-24 h-px bg-dorado mx-auto mb-8"></div>
-            <p class="text-xl md:text-2xl italic mb-12 opacity-80 uppercase tracking-widest text-center">12 de Septiembre de 2026</p>
+            <p class="text-xl md:text-2xl italic mb-12 opacity-80 uppercase tracking-widest text-center">September 12th, 2026</p>
             
             <div id="countdown" class="flex gap-4 md:gap-8 justify-center font-sans">
                 <div class="flex flex-col items-center">
                     <span id="days" class="text-3xl font-light text-azul">00</span>
-                    <span class="text-[10px] uppercase tracking-widest text-dorado font-semibold">Días</span>
+                    <span class="text-[10px] uppercase tracking-widest text-dorado font-semibold">Days</span>
                 </div>
                 <div class="flex flex-col items-center">
                     <span id="hours" class="text-3xl font-light text-azul">00</span>
-                    <span class="text-[10px] uppercase tracking-widest text-dorado font-semibold">Horas</span>
+                    <span class="text-[10px] uppercase tracking-widest text-dorado font-semibold">Hours</span>
                 </div>
                 <div class="flex flex-col items-center">
                     <span id="minutes" class="text-3xl font-light text-azul">00</span>
@@ -54,7 +57,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <span id="seconds" class="text-3xl font-light text-azul">00</span>
-                    <span class="text-[10px] uppercase tracking-widest text-dorado font-semibold">Segs</span>
+                    <span class="text-[10px] uppercase tracking-widest text-dorado font-semibold">Secs</span>
                 </div>
             </div>
         </div>
@@ -63,130 +66,160 @@
         </div>
     </header>
 
-    <!-- SECCIÓN DE IMAGEN LOCAL -->
+    <!-- LOCAL IMAGE SECTION -->
     <section class="py-16 px-6 bg-white">
         <div class="max-w-4xl mx-auto">
             <div class="rounded-2xl overflow-hidden shadow-2xl">
-                <!-- Cambia 'nuestra-foto.jpg' por el nombre de tu archivo en GitHub -->
-                <img src="nuestra-foto.jpg" alt="Ana y Javier" class="w-full h-auto object-cover max-h-[600px]" onerror="this.style.display='none'">
+                <img src="nuestra-foto.jpg" alt="Ana and Javier" class="w-full h-auto object-cover max-h-[600px]" onerror="this.style.display='none'">
             </div>
         </div>
     </section>
 
-    <!-- RESERVA LA FECHA -->
+    <!-- SAVE THE DATE SECTION -->
     <section class="py-24 px-6 bg-white border-b border-slate-50">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-xs uppercase tracking-[0.4em] text-dorado mb-8 font-bold italic w-full block text-center">Reserva la fecha</h2>
+            <h2 class="text-xs uppercase tracking-[0.4em] text-dorado mb-8 font-bold italic w-full block text-center">Save the Date</h2>
             <p class="text-2xl md:text-3xl font-light leading-relaxed mb-8 text-azul text-center">
-                Compartimos este espacio con vosotros para que podáis reservar esta fecha en vuestro calendario.
+                We share this space with you so you can save this date in your calendar.
             </p>
         </div>
     </section>
-        <section class="py-12 px-6 bg-white">
-        <div class="max-w-sm mx-auto">
-            <div class="rounded-2xl overflow-hidden shadow-xl bg-slate-50 aspect-[3/4]">
-                <!-- Cambia 'foto-vertical.jpg' por el nombre de tu archivo vertical subido a GitHub -->
-                <img src="foto-vertical.jpeg" alt="[Imagen de los novios]" class="w-full h-full object-cover" onerror="this.style.display='none'">
-            </div>
-        </div>
-    </section>
 
-    <!-- LA CEREMONIA -->
-    <section class="py-24 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-light mb-8 text-azul text-center">El Enlace</h2>
-        <div class="grid md:grid-cols-2 gap-12 text-left">
-            <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 transition hover:shadow-md text-center md:text-left">
-                <i data-lucide="calendar" class="mb-4 text-dorado mx-auto md:mx-0"></i>
-                <h3 class="text-xl font-semibold mb-2 text-center">Cuándo</h3>
-                <p class="text-slate-500 text-sm italic text-center">Sábado, 12 de Septiembre, 2026</p>
-                <p class="text-slate-500 text-sm">Recepción: 11:30 AM | Ceremonia: 12:00 PM</p>
-            </div>
-            <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 transition hover:shadow-md text-center md:text-left">
-                <i data-lucide="map-pin" class="mb-4 text-dorado mx-auto md:mx-0"></i>
-                <h3 class="text-xl font-semibold mb-2 text-center">Dónde</h3>
-                <p class="text-slate-500 italic font-medium text-lg text-center">Iglesia de Santiago Apóstol</p>
-                <p class="text-slate-500 text-sm mb-4">Calle Granada, 78. Málaga.</p>
-                <a href="https://www.google.com/maps/search/?api=1&query=Iglesia+de+Santiago+Apóstol+Málaga" target="_blank" class="text-dorado hover:underline text-[10px] tracking-widest uppercase inline-block text-left">Ver ubicación →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- BANQUETE -->
-    <section class="py-20 bg-[#F4F1EA] border-y border-white/50 text-center">
-        <div class="max-w-xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-light mb-4 text-dorado text-center">La Celebración</h2>
-            <p class="text-slate-600 italic text-center text-center leading-relaxed">Estamos seleccionando el lugar perfecto para el banquete. <br> Te informaremos muy pronto sobre la ubicación exacta de la fiesta.</p>
-        </div>
-    </section>
-
-    <!-- CONFIRMACIÓN -->
-    <section class="py-24 px-6 max-w-2xl mx-auto text-center">
-        <h2 class="text-4xl font-light mb-6 text-azul">Confirmación</h2>
-        <div class="max-w-lg mx-auto mb-10 text-center">
-            <p class="text-slate-600 italic text-sm leading-relaxed mb-4 text-center">
-                Aunque todavía falta tiempo para nuestro encuentro, si ya tenéis clara vuestra asistencia, nos encantaría que nos lo indicarais para comenzar con los preparativos.
-            </p>
-            <p class="text-slate-400 italic text-xs text-center">Si aún no estáis seguros, no os preocupéis, volveremos a preguntarlo más adelante.</p>
-        </div>
-        <div class="bg-white p-10 md:p-16 rounded-3xl border border-slate-100 shadow-xl flex flex-col items-center justify-center space-y-6 mx-auto">
-            <i data-lucide="check-circle" size="48" class="text-[#D4AF37]"></i>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVFyZFdR2yHYH5_bOWMR9e9Cjk9v1T6-pb1CyD_-MopQH9aw/viewform?usp=publish-editor" target="_blank" class="bg-azul text-white px-12 py-4 rounded-full text-[10px] tracking-[0.3em] hover:bg-dorado transition transform hover:scale-105 shadow-lg uppercase font-semibold inline-block text-center">Rellenar Formulario</a>
-        </div>
-    </section>
-
-    <!-- LOGÍSTICA -->
-    <section class="py-24 bg-white border-t border-slate-100 text-center">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-light mb-12 text-center underline decoration-[#D4AF37]/20 underline-offset-8 text-azul w-full block">Información de Interés</h2>
-            <div class="grid md:grid-cols-3 gap-12 text-center">
-                <div class="flex flex-col items-center">
-                    <div class="w-14 h-14 rounded-full bg-crema flex items-center justify-center mb-6 text-dorado border border-dorado/10"><i data-lucide="plane"></i></div>
-                    <h4 class="font-bold mb-3 uppercase text-[10px] tracking-widest">Aeropuerto</h4>
-                    <p class="text-slate-500 text-sm text-center">Aeropuerto de Málaga (AGP). <br> A 15 minutos del centro.</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <div class="w-14 h-14 rounded-full bg-crema flex items-center justify-center mb-6 text-dorado border border-dorado/10"><i data-lucide="train"></i></div>
-                    <h4 class="font-bold mb-3 uppercase text-[10px] tracking-widest text-center">Tren</h4>
-                    <p class="text-slate-500 text-sm text-center">Estación María Zambrano.</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <div class="w-14 h-14 rounded-full bg-[#FFF5F5] flex items-center justify-center mb-6 text-[#C2410C] border border-[#FECACA]/50"><i data-lucide="hotel"></i></div>
-                    <h4 class="font-bold mb-3 uppercase text-[10px] tracking-widest text-center text-azul">Alojamiento</h4>
-                    <p class="text-slate-500 text-sm italic text-center">Recomendamos reservar con antelación.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- VERTICAL IMAGE SECTION -->
     <section class="py-12 px-6 bg-white">
         <div class="max-w-sm mx-auto">
             <div class="rounded-2xl overflow-hidden shadow-xl bg-slate-50 aspect-[3/4]">
-                <!-- Cambia 'foto-vertical-final.jpg' por el nombre de tu segunda foto vertical subida a GitHub -->
-                <img src="foto-vertical-final.jpeg" alt="[Imagen de los novios]" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                <img src="foto-vertical.jpeg" alt="[Couple Portrait]" class="w-full h-full object-cover" onerror="this.style.display='none'">
             </div>
         </div>
     </section>
 
-    <!-- PIE DE PÁGINA -->
+    <!-- THE WEDDING SECTION -->
+    <section class="py-24 px-6 max-w-4xl mx-auto text-center border-t border-slate-50">
+        <div class="flex justify-center mb-6 text-[#D4AF37]">
+            <i data-lucide="heart" size="40"></i>
+        </div>
+        <h2 class="text-4xl font-light mb-8 text-azul text-center">The Wedding</h2>
+        <div class="grid md:grid-cols-2 gap-12 text-center">
+            <!-- Card When -->
+            <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 transition hover:shadow-md text-center">
+                <i data-lucide="calendar" class="mb-4 text-dorado mx-auto"></i>
+                <h3 class="text-xl font-semibold mb-2 text-center">When</h3>
+                <p class="text-slate-500 text-sm italic text-center">Saturday, September 12th, 2026</p>
+                <p class="text-slate-500 text-sm">Welcome: 11:30 AM | Ceremony: 12:00 PM</p>
+            </div>
+            <!-- Card Where -->
+            <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 transition hover:shadow-md text-center">
+                <i data-lucide="map-pin" class="mb-4 text-dorado mx-auto"></i>
+                <h3 class="text-xl font-semibold mb-2 text-center">Where</h3>
+                <p class="text-slate-500 italic font-medium text-lg text-center">Santiago Apóstol Church</p>
+                <p class="text-slate-500 text-sm mb-4">Calle Granada, 78. Málaga, Spain.</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Iglesia+de+Santiago+Apóstol+Málaga" target="_blank" class="text-dorado hover:underline text-[10px] tracking-widest uppercase inline-block text-center font-semibold tracking-wider">View Location →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CELEBRATION SECTION -->
+    <section class="py-20 bg-[#F4F1EA] border-y border-white/50 text-center">
+        <div class="max-w-xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-light mb-4 text-dorado text-center">The Celebration</h2>
+            <p class="text-slate-600 italic text-center leading-relaxed">We are selecting the perfect venue for the banquet. <br> We will inform you very soon about the exact location of the party.</p>
+        </div>
+    </section>
+
+    <!-- RSVP SECTION -->
+    <section class="py-24 px-6 max-w-2xl mx-auto text-center">
+        <h2 class="text-4xl font-light mb-6 text-azul">RSVP</h2>
+        <div class="max-w-lg mx-auto mb-10 text-center">
+            <p class="text-slate-600 italic text-sm leading-relaxed mb-4 text-center text-center text-center">
+                Although there is still time before our meeting, if you already know you will be attending, we would love for you to let us know to start with the preparations.
+            </p>
+            <p class="text-slate-400 italic text-xs text-center">If you are not sure yet, don't worry, we will ask you again later.</p>
+        </div>
+        <div class="bg-white p-10 md:p-16 rounded-3xl border border-slate-100 shadow-xl flex flex-col items-center justify-center space-y-6 mx-auto text-center">
+            <div class="flex justify-center text-[#D4AF37]">
+                <i data-lucide="check-circle" size="48"></i>
+            </div>
+            <h4 class="font-bold text-lg uppercase tracking-widest text-center text-azul">Confirm Now</h4>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVFyZFdR2yHYH5_bOWMR9e9Cjk9v1T6-pb1CyD_-MopQH9aw/viewform?usp=publish-editor" target="_blank" class="bg-azul text-white px-12 py-4 rounded-full text-[10px] tracking-[0.3em] hover:bg-dorado transition transform hover:scale-105 shadow-lg uppercase font-semibold inline-block text-center">Fill out Form</a>
+        </div>
+    </section>
+
+    <!-- LOGISTICS SECTION -->
+    <section class="py-24 bg-white border-t border-slate-100 text-center">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-light mb-12 text-center underline decoration-[#D4AF37]/20 underline-offset-8 text-azul w-full block">Information of Interest</h2>
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <!-- Airport -->
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-crema flex items-center justify-center mb-6 text-dorado border border-dorado/10 mx-auto">
+                        <i data-lucide="plane"></i>
+                    </div>
+                    <h4 class="font-bold mb-3 uppercase text-[10px] tracking-widest">Airport</h4>
+                    <p class="text-slate-500 text-sm text-center leading-relaxed">Málaga Airport (AGP). <br> 15 minutes from the center.</p>
+                </div>
+                <!-- Train -->
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-crema flex items-center justify-center mb-6 text-dorado border border-dorado/10 mx-auto">
+                        <i data-lucide="train"></i>
+                    </div>
+                    <h4 class="font-bold mb-3 uppercase text-[10px] tracking-widest text-center">Train</h4>
+                    <p class="text-slate-500 text-sm text-center leading-relaxed">María Zambrano Station.</p>
+                </div>
+                <!-- Accommodation -->
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-[#FFF5F5] flex items-center justify-center mb-6 text-[#C2410C] border border-[#FECACA]/50 mx-auto">
+                        <i data-lucide="hotel"></i>
+                    </div>
+                    <h4 class="font-bold mb-3 uppercase text-[10px] tracking-widest text-center text-azul">Accommodation</h4>
+                    <p class="text-slate-500 text-sm italic text-center leading-relaxed">High Season. <br> We recommend booking in advance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL VERTICAL IMAGE SECTION -->
+    <section class="py-12 px-6 bg-white">
+        <div class="max-w-sm mx-auto">
+            <div class="rounded-2xl overflow-hidden shadow-xl bg-slate-50 aspect-[3/4]">
+                <img src="foto-vertical-final.jpeg" alt="[Couple Portrait Final]" class="w-full h-full object-cover" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="py-24 bg-azul text-white text-center">
         <div class="max-w-xs mx-auto text-center">
             <p class="text-4xl font-light tracking-[0.3em] mb-6 text-center w-full block">Ana & Javier</p>
             <div class="w-16 h-px bg-[#D4AF37]/30 mx-auto mb-6 text-center"></div>
-            <p class="text-[10px] tracking-[0.6em] uppercase opacity-40 italic text-center w-full block">Málaga • 12.09.2026</p>
+            <p class="text-[10px] tracking-[0.6em] uppercase opacity-40 italic text-center w-full block font-sans font-light">Málaga • 12.09.2026</p>
         </div>
     </footer>
 
     <script>
+        // Initialize Icons
         lucide.createIcons();
+
+        // Countdown Logic
         function updateCountdown() {
             const target = new Date('September 12, 2026 12:00:00').getTime();
             const now = new Date().getTime();
             const diff = target - now;
-            if (diff <= 0) return;
+            
+            if (diff <= 0) {
+                document.getElementById('days').innerText = '00';
+                document.getElementById('hours').innerText = '00';
+                document.getElementById('minutes').innerText = '00';
+                document.getElementById('seconds').innerText = '00';
+                return;
+            }
+            
             document.getElementById('days').innerText = Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
             document.getElementById('hours').innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
             document.getElementById('minutes').innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
             document.getElementById('seconds').innerText = Math.floor((diff % (1000 * 60)) / 1000).toString().padStart(2, '0');
         }
+        
         setInterval(updateCountdown, 1000);
         updateCountdown();
     </script>
